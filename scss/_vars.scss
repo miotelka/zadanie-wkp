@@ -1,0 +1,11 @@
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+
+
+@mixin sm-up {@media (min-width: #{$sm}) {@content;}}
+@mixin sm-down {@media (max-width: #{$sm - 1px}) {@content;}}
+@mixin md-up {@media (min-width: #{$md}) {@content;}}
+@mixin md-down {@media (max-width: #{$md - 1px}) {@content;}}
+@mixin lg-up {@media (min-width: #{$lg}) {@content;}}
+@mixin lg-down {@media (max-width: #{$lg - 1px}) {@content;}}
